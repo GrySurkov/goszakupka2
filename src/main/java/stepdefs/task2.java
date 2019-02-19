@@ -114,13 +114,13 @@ public class task2 {
                 }
 
                 try {
-                    writer.append("\n");
+                    writer.append("\r\n");
                     writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(4) > td:nth-child(2)")).getText());
-                    writer.append("\n");
+                    writer.append("\r\n");
                     writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(2) > td:nth-child(2)")).getText());
-                    writer.append("\n");
+                    writer.append("\r\n");
                     writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(10) > td:nth-child(2)")).getText());
-                    writer.append("\n");
+                    writer.append("\r\n");
                 } catch (Exception ex) {
                     ex.fillInStackTrace();
                 }
