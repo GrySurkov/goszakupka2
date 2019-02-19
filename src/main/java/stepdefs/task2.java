@@ -115,7 +115,7 @@ public class task2 {
             } catch (Exception ex) {
                 ex.fillInStackTrace();
             }
-           // driver.close();
+            driver.close();
             driver.switchTo().window(window);
         }
     try {
