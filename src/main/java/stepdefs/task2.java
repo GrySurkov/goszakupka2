@@ -45,11 +45,13 @@ public class task2 {
 
     @Then("^i found element by cssSelector \"([^\"]*)\" and click them$")
     public void i_found_element_by_cssSelector_and_click_them(String css) {
+        WebDriver.Timeouts timeouts = driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector(css)).click();
     }
 
     @Then("^i found element by id \"([^\"]*)\" and enter \"([^\"]*)\"$")
     public void i_found_element_by_id_and_entering(String id, String data) {
+
         driver.findElement(By.id(id)).sendKeys(data);
     }
 
@@ -96,12 +98,16 @@ public class task2 {
         } catch (Exception ex){
             System.out.println("Файл не найден");
         }
+//        String pages = driver.findElement(By.cssSelector("body > div.parametrs.margBtm10 > div > div.paginator.greyBox.extendedVariant.margBtm20 > div.paginator.greyBox > p > strong")).getText();
+//        int iPages = Integer.parseInt(pages);
+//        iPages = iPages/10;
+//       for(int j = 1; j<iPages; j++)
         for (int i = 0; i<tables.size(); i++) {
             tables.get(i).findElement(By.xpath("//*[text()=\"Сведения\"]")).click();
             for (String windowHandel : driver.getWindowHandles()) {
                 driver.switchTo().window(windowHandel);
             }
-            //driver.findElement(By.cssSelector("body > div.msgBox.dualFz > div:nth-child(2) > div.msgBoxButtons > input:nth-child(1)")).click();
+
             try {
                 writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(4) > td:nth-child(2)")).getText());
                 writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(2) > td:nth-child(2)")).getText());

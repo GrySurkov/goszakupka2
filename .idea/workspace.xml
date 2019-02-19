@@ -4,7 +4,7 @@
     <list default="true" id="59075aad-5825-4da5-a742-1f31619fd231" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/stepdefs/task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stepdefs/task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/task2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/task2.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stepdefs/task2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stepdefs/task2.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/quality/CucumberTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="200">
+              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/task2.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="45" />
+            <state relative-caret-position="120">
+              <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -40,10 +40,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/stepdefs/task2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="92" column="104" selection-start-line="92" selection-start-column="104" selection-end-line="92" selection-end-column="104" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1550577984295" expanded="true" signature="5047:5121" ph="..." />
               </folding>
             </state>
           </provider>
@@ -52,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="223">
               <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
             </state>
           </provider>
@@ -68,6 +69,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>i fo</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -78,9 +84,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/quality/task2.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/quality/Task2.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/quality/CucumberTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/quality/CucumberTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/task2.feature" />
         <option value="$PROJECT_DIR$/src/main/java/stepdefs/task2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/quality/CucumberTest.java" />
       </list>
     </option>
   </component>
@@ -160,7 +166,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550576152296" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550581635000" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../testCucumber" />
   </component>
@@ -245,34 +251,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CucumberTest - 2019.02.19 at 13h 57m 34s.xml">
+    <history-entry file="CucumberTest - 2019.02.19 at 14h 50m 32s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 01m 56s.xml">
+    <history-entry file="CucumberTest - 2019.02.19 at 14h 51m 43s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 13m 22s.xml">
+    <history-entry file="CucumberTest - 2019.02.19 at 14h 53m 23s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 21m 31s.xml">
+    <history-entry file="CucumberTest - 2019.02.19 at 14h 54m 15s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 23m 35s.xml">
+    <history-entry file="CucumberTest - 2019.02.19 at 14h 57m 25s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 24m 33s.xml">
+    <history-entry file="CucumberTest - 2019.02.19 at 14h 58m 15s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 26m 29s.xml">
+    <history-entry file="CucumberTest - 2019.02.19 at 14h 59m 17s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 29m 01s.xml">
+    <history-entry file="CucumberTest - 2019.02.19 at 15h 03m 07s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 31m 05s.xml">
+    <history-entry file="CucumberTest - 2019.02.19 at 15h 06m 05s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 32m 22s.xml">
+    <history-entry file="CucumberTest - 2019.02.19 at 15h 06m 59s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -280,7 +286,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -289,7 +295,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43207857" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20458265" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -313,34 +319,35 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/quality/Task2.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="223">
           <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/task2.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/quality/CucumberTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="200">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/task2.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/stepdefs/task2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="92" column="104" selection-start-line="92" selection-start-column="104" selection-end-line="92" selection-end-column="104" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1550577984295" expanded="true" signature="5047:5121" ph="..." />
           </folding>
         </state>
       </provider>
