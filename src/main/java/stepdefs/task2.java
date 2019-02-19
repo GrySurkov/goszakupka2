@@ -27,7 +27,7 @@ public class task2 {
     public void i_am_on_page(String url) {
         System.setProperty("webdriver.chrome.driver", "D:\\JavaProject\\chromedriver.exe");
         driver = new ChromeDriver();
-        WebDriver.Timeouts timeouts = driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 50);
         driver.manage().window().maximize();
         driver.get(url);
@@ -35,6 +35,7 @@ public class task2 {
 
     @Then("^i see \"([^\"]*)\" and click them$")
     public void i_see_and_click_them(String btn) {
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.findElement(By.linkText(btn)).click();
         for (String windowHandel : driver.getWindowHandles()) {
             driver.switchTo().window(windowHandel);
@@ -45,13 +46,13 @@ public class task2 {
 
     @Then("^i found element by cssSelector \"([^\"]*)\" and click them$")
     public void i_found_element_by_cssSelector_and_click_them(String css) {
-        WebDriver.Timeouts timeouts = driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector(css)).click();
     }
 
     @Then("^i found element by id \"([^\"]*)\" and enter \"([^\"]*)\"$")
     public void i_found_element_by_id_and_entering(String id, String data) {
-        WebDriver.Timeouts timeouts = driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.findElement(By.id(id)).sendKeys(data);
     }
 
@@ -92,31 +93,41 @@ public class task2 {
 
     @Then("^i get result and write there in file$")
     public void i_get_result_and_write_there_in_file() {
-        List<WebElement> tables = driver.findElements(By.xpath("//*[@id=\"exceedSphinxPageSizeDiv\"]//table"));
+
         try {
             writer = new FileWriter("result.txt",false);
         } catch (Exception ex){
             System.out.println("Файл не найден");
         }
-//        String pages = driver.findElement(By.cssSelector("body > div.parametrs.margBtm10 > div > div.paginator.greyBox.extendedVariant.margBtm20 > div.paginator.greyBox > p > strong")).getText();
-//        int iPages = Integer.parseInt(pages);
-//        iPages = iPages/10;
-//       for(int j = 1; j<iPages; j++)
-        for (int i = 0; i<tables.size(); i++) {
-            tables.get(i).findElement(By.xpath("//*[text()=\"Сведения\"]")).click();
-            for (String windowHandel : driver.getWindowHandles()) {
-                driver.switchTo().window(windowHandel);
-            }
 
-            try {
-                writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(4) > td:nth-child(2)")).getText());
-                writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(2) > td:nth-child(2)")).getText());
-                writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(10) > td:nth-child(2)")).getText());
-            } catch (Exception ex) {
-                ex.fillInStackTrace();
+        String pagesN = driver.findElement(By.cssSelector("body > div.parametrs.margBtm10 > div > div.paginator.greyBox.extendedVariant.margBtm20 > div.paginator.greyBox > p > strong")).getText();
+        int iPages = Integer.parseInt(pagesN);
+        iPages = iPages/10;
+        for(int j = 1; j<iPages; j++) {
+            List<WebElement> tables = driver.findElements(By.xpath("//*[@id=\"exceedSphinxPageSizeDiv\"]/div[1]"));
+
+            for (int i = 0; i < tables.size(); i++) {
+
+                tables.get(i).findElement(By.xpath("./div/ul/li[1]")).click();
+                for (String windowHandel : driver.getWindowHandles()) {
+                    driver.switchTo().window(windowHandel);
+                }
+
+                try {
+                    writer.append("\n");
+                    writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(4) > td:nth-child(2)")).getText());
+                    writer.append("\n");
+                    writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(2) > td:nth-child(2)")).getText());
+                    writer.append("\n");
+                    writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(10) > td:nth-child(2)")).getText());
+                    writer.append("\n");
+                } catch (Exception ex) {
+                    ex.fillInStackTrace();
+                }
+                driver.close();
+                driver.switchTo().window(window);
             }
-            driver.close();
-            driver.switchTo().window(window);
+            driver.findElement(By.cssSelector("body > div.parametrs.margBtm10 > div > div.paginator.greyBox.extendedVariant.margBtm20 > div.paginator.greyBox > ul > li:nth-child(" + (j+1) + ") > a > span")).click();
         }
     try {
         writer.close();
