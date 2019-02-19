@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.FileWriter;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -18,6 +19,8 @@ public class task2 {
 
     static WebDriver driver;
     static WebDriverWait wait;
+    static FileWriter writer;
+    static String window;
 
 
     @Given("^i am on \"([^\"]*)\" page$")
@@ -35,7 +38,9 @@ public class task2 {
         driver.findElement(By.linkText(btn)).click();
         for (String windowHandel : driver.getWindowHandles()) {
             driver.switchTo().window(windowHandel);
+
         }
+        window = driver.getWindowHandle();
     }
 
     @Then("^i found element by cssSelector \"([^\"]*)\" and click them$")
@@ -81,5 +86,38 @@ public class task2 {
                 }
             }
         }
+    }
+
+    @Then("^i get result and write there in file$")
+    public void i_get_result_and_write_there_in_file() {
+        List<WebElement> tables = driver.findElements(By.xpath("//*[@id=\"exceedSphinxPageSizeDiv\"]//table"));
+        try {
+            writer = new FileWriter("result.txt",false);
+        } catch (Exception ex){
+            System.out.println("Файл не найден");
+        }
+        for (int i = 0; i<tables.size(); i++) {
+            tables.get(i).findElement(By.xpath("//*[text()=\"Сведения\"]")).click();
+            for (String windowHandel : driver.getWindowHandles()) {
+                driver.switchTo().window(windowHandel);
+            }
+            //driver.findElement(By.cssSelector("body > div.msgBox.dualFz > div:nth-child(2) > div.msgBoxButtons > input:nth-child(1)")).click();
+            try {
+                writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(4) > td:nth-child(2)")).getText());
+                writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(2) > td:nth-child(2)")).getText());
+                writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(10) > td:nth-child(2)")).getText());
+            } catch (Exception ex) {
+                ex.fillInStackTrace();
+            }
+            driver.close();
+            driver.switchTo().window(window);
+        }
+    try {
+        writer.close();
+    }catch (Exception ex){
+        ex.fillInStackTrace();
+    }
+
+
     }
 }
