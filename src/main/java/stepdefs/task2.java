@@ -104,7 +104,7 @@ public class task2 {
         int iPages = Integer.parseInt(pagesN);
         iPages = iPages/10;
         for(int j = 1; j<iPages; j++) {
-            List<WebElement> tables = driver.findElements(By.xpath("//*[@id=\"exceedSphinxPageSizeDiv\"]/div[1]"));
+            List<WebElement> tables = driver.findElements(By.xpath("//*[@id=\"exceedSphinxPageSizeDiv\"]/div"));
 
             for (int i = 0; i < tables.size(); i++) {
 
