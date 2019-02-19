@@ -45,13 +45,13 @@ public class task2 {
 
     @Then("^i found element by cssSelector \"([^\"]*)\" and click them$")
     public void i_found_element_by_cssSelector_and_click_them(String css) {
-        WebDriver.Timeouts timeouts = driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        WebDriver.Timeouts timeouts = driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector(css)).click();
     }
 
     @Then("^i found element by id \"([^\"]*)\" and enter \"([^\"]*)\"$")
     public void i_found_element_by_id_and_entering(String id, String data) {
-
+        WebDriver.Timeouts timeouts = driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.findElement(By.id(id)).sendKeys(data);
     }
 
@@ -115,7 +115,7 @@ public class task2 {
             } catch (Exception ex) {
                 ex.fillInStackTrace();
             }
-            driver.close();
+           // driver.close();
             driver.switchTo().window(window);
         }
     try {

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59075aad-5825-4da5-a742-1f31619fd231" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/stepdefs/task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stepdefs/task2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/stepdefs/task2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stepdefs/task2.class" afterDir="false" />
     </list>
@@ -20,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/quality/CucumberTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/task2.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+            <state relative-caret-position="75">
+              <caret line="15" column="94" lean-forward="true" selection-start-line="15" selection-start-column="94" selection-end-line="15" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -40,11 +41,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/stepdefs/task2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="338">
+              <caret line="53" column="102" selection-start-line="53" selection-start-column="102" selection-end-line="53" selection-end-column="102" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1550577984295" expanded="true" signature="5047:5121" ph="..." />
+                <marker date="1550583957830" expanded="true" signature="5149:5225" ph="..." />
               </folding>
             </state>
           </provider>
@@ -84,9 +85,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/quality/task2.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/quality/Task2.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/quality/CucumberTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/quality/CucumberTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/task2.feature" />
         <option value="$PROJECT_DIR$/src/main/java/stepdefs/task2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/quality/CucumberTest.java" />
       </list>
     </option>
   </component>
@@ -166,7 +167,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550581635000" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550584581849" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../testCucumber" />
   </component>
@@ -251,34 +252,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 50m 32s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 51m 43s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 53m 23s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 54m 15s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 57m 25s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 58m 15s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 14h 59m 17s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 15h 03m 07s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CucumberTest - 2019.02.19 at 15h 06m 05s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CucumberTest - 2019.02.19 at 15h 06m 59s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.19 at 16h 42m 04s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.19 at 16h 43m 10s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.19 at 16h 43m 48s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.19 at 16h 44m 43s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.19 at 16h 45m 16s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.19 at 16h 47m 02s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.19 at 16h 51m 17s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.19 at 16h 52m 19s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -286,7 +287,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -295,7 +296,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20458265" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.58919805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -327,7 +328,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/quality/CucumberTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -336,18 +337,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/task2.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+        <state relative-caret-position="75">
+          <caret line="15" column="94" lean-forward="true" selection-start-line="15" selection-start-column="94" selection-end-line="15" selection-end-column="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/stepdefs/task2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="338">
+          <caret line="53" column="102" selection-start-line="53" selection-start-column="102" selection-end-line="53" selection-end-column="102" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1550577984295" expanded="true" signature="5047:5121" ph="..." />
+            <marker date="1550583957830" expanded="true" signature="5149:5225" ph="..." />
           </folding>
         </state>
       </provider>
