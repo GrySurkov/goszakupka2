@@ -7,13 +7,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.io.FileWriter;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+
 
 public class task2 {
 
@@ -27,9 +26,8 @@ public class task2 {
     public void i_am_on_page(String url) {
         System.setProperty("webdriver.chrome.driver", "D:\\JavaProject\\chromedriver.exe");
         driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 10);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver, 50);
+        wait = new WebDriverWait(driver, 20);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(url);
     }
@@ -46,10 +44,10 @@ public class task2 {
 
     @Then("^i found element by cssSelector \"([^\"]*)\" and click them$")
     public void i_found_element_by_cssSelector_and_click_them(String css) {
+        //wait.until(ExpectedConditions.)
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        wait.withTimeout(10, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector(css)).click();
-;
+
 
     }
 
@@ -75,6 +73,7 @@ public class task2 {
 
 
     }
+
     @Then("^i get list of elements by cssSelector \"([^\"]*)\" and choose elements \"([^\"]*)\"$")
     public void i_get_list_of_elements_by_cssSelector_and_choose_elements(String cssSelector, String element) {
         wait.until(ExpectedConditions.visibilityOfAllElements(driver.findElements(By.cssSelector(cssSelector))));
@@ -98,15 +97,21 @@ public class task2 {
     public void i_get_result_and_write_there_in_file() {
 
         try {
-            writer = new FileWriter("result.txt",false);
-        } catch (Exception ex){
+            writer = new FileWriter("result.txt", false);
+        } catch (Exception ex) {
             System.out.println("Файл не найден");
         }
 
         String pagesN = driver.findElement(By.cssSelector("body > div.parametrs.margBtm10 > div > div.paginator.greyBox.extendedVariant.margBtm20 > div.paginator.greyBox > p > strong")).getText();
-        int iPages = Integer.parseInt(pagesN);
-        iPages = iPages/10;
-        for(int j = 1; j<iPages; j++) {
+         int iPages = Integer.parseInt(pagesN);
+        if ((iPages % 10) == 0) {
+            iPages = iPages / 10;
+            System.out.println(iPages);
+        }else {
+            iPages = (iPages / 10) - 1;
+            System.out.println(iPages);
+        }
+        for (int j = 1; j < iPages; j++) {
             driver.findElement(By.cssSelector("body > div.parametrs.margBtm10 > div > div.paginator.greyBox.extendedVariant.margBtm20 > div.paginator.greyBox > ul > li:nth-child(" + j + ") > a > span")).click();
             List<WebElement> tables = driver.findElements(By.xpath("//*[@id=\"exceedSphinxPageSizeDiv\"]/div"));
 
@@ -133,12 +138,18 @@ public class task2 {
             }
 
         }
-    try {
-        writer.close();
-    }catch (Exception ex){
-        ex.fillInStackTrace();
+        try {
+            writer.close();
+        } catch (Exception ex) {
+            ex.fillInStackTrace();
+        }
+
+
     }
 
-
+    @Then("^i entering data in fields and click button \"([^\"]*)\"$")
+    public void i_entering_data_in_fields_and_click_button(String css) {
+        wait.until(ExpectedConditions.invisibilityOfAllElements(driver.findElements(By.xpath("//*[@id=\"organizationLevelTag\"]/div/div[2]/div[1]/ul/li"))));
+        driver.findElement(By.cssSelector(css)).click();
     }
 }

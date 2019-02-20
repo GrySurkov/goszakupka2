@@ -14,7 +14,8 @@ Feature: A description
     Then i found element by cssSelector "#organizationLevelTag > div > div.collapsed.height30 > span.msPlaceholder" and click them
     Then i get list of elements by cssSelector "#organizationLevelTag > div > div.selectChose > div.expanded > ul" and choose elements "федеральный уровень"
     Then i found element by cssSelector "#organizationLevelTagSelectBtn > span" and click them
-    Then i found element by cssSelector "#searchButtonsBlock > div > span.bigOrangeBtn.margLeft20" and click them
+   # Then i found element by cssSelector "#searchButtonsBlock > div > span.bigOrangeBtn.margLeft20" and click them
+    Then i entering data in fields and click button "#searchButtonsBlock > div > span.bigOrangeBtn.margLeft20"
     Then i get result and write there in file
 
 
