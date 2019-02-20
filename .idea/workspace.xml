@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59075aad-5825-4da5-a742-1f31619fd231" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/stepdefs/task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stepdefs/task2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/stepdefs/task2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stepdefs/task2.class" afterDir="false" />
     </list>
@@ -19,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/quality/CucumberTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="160">
               <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -31,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/task2.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="280">
               <caret line="14" column="113" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="113" />
             </state>
           </provider>
@@ -40,11 +41,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/stepdefs/task2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="114" column="78" selection-start-line="114" selection-start-column="78" selection-end-line="114" selection-end-column="78" />
+            <state relative-caret-position="67">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1550606054257" expanded="true" signature="5594:5676" ph="..." />
+                <marker date="1550649955380" expanded="true" signature="5594:5676" ph="..." />
               </folding>
             </state>
           </provider>
@@ -109,6 +110,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,8 +164,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,41 +252,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CucumberTest - 2019.02.19 at 22h 07m 40s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 22h 15m 04s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 22h 15m 33s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 22h 16m 27s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 22h 17m 05s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 22h 18m 14s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 22h 18m 41s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 22h 43m 35s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.02.19 at 22h 46m 16s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CucumberTest - 2019.02.19 at 22h 54m 35s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.20 at 10h 49m 00s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.20 at 10h 50m 33s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.20 at 10h 54m 38s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.20 at 10h 57m 47s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.20 at 10h 59m 04s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.20 at 11h 00m 19s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.20 at 11h 01m 19s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.20 at 11h 05m 53s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.20 at 11h 12m 08s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -294,7 +296,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.58919805" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.58919805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -316,16 +318,9 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/quality/Task2.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/quality/CucumberTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="160">
           <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -335,18 +330,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/task2.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="280">
           <caret line="14" column="113" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/stepdefs/task2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="114" column="78" selection-start-line="114" selection-start-column="78" selection-end-line="114" selection-end-column="78" />
+        <state relative-caret-position="67">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1550606054257" expanded="true" signature="5594:5676" ph="..." />
+            <marker date="1550649955380" expanded="true" signature="5594:5676" ph="..." />
           </folding>
         </state>
       </provider>
