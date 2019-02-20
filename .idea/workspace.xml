@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59075aad-5825-4da5-a742-1f31619fd231" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stepdefs/task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stepdefs/task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/task2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/task2.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stepdefs/task2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stepdefs/task2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task2.feature" afterDir="false" />
-    </list>
+    <list default="true" id="59075aad-5825-4da5-a742-1f31619fd231" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,11 +36,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/stepdefs/task2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="151" column="145" selection-start-line="151" selection-start-column="145" selection-end-line="151" selection-end-column="145" />
+            <state relative-caret-position="247">
+              <caret line="152" column="56" selection-start-line="152" selection-start-column="56" selection-end-line="152" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1550657514223" expanded="true" signature="5677:5759" ph="..." />
+                <marker date="1550658063987" expanded="true" signature="5677:5759" ph="..." />
               </folding>
             </state>
           </provider>
@@ -160,7 +153,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550658063862" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550658273299" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../testCucumber" />
   </component>
@@ -245,9 +238,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CucumberTest - 2019.02.20 at 12h 03m 10s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CucumberTest - 2019.02.20 at 12h 08m 49s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
@@ -273,6 +263,9 @@
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CucumberTest - 2019.02.20 at 13h 12m 20s.xml">
+      <configuration name="CucumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CucumberTest - 2019.02.20 at 13h 18m 51s.xml">
       <configuration name="CucumberTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -337,11 +330,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/stepdefs/task2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="151" column="145" selection-start-line="151" selection-start-column="145" selection-end-line="151" selection-end-column="145" />
+        <state relative-caret-position="247">
+          <caret line="152" column="56" selection-start-line="152" selection-start-column="56" selection-end-line="152" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1550657514223" expanded="true" signature="5677:5759" ph="..." />
+            <marker date="1550658063987" expanded="true" signature="5677:5759" ph="..." />
           </folding>
         </state>
       </provider>

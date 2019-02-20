@@ -104,14 +104,8 @@ public class task2 {
 
         String pagesN = driver.findElement(By.cssSelector("body > div.parametrs.margBtm10 > div > div.paginator.greyBox.extendedVariant.margBtm20 > div.paginator.greyBox > p > strong")).getText();
          int iPages = Integer.parseInt(pagesN);
-        if ((iPages % 10) == 0) {
-            iPages = iPages / 10;
-            System.out.println(iPages);
-        }else {
-            iPages = (iPages / 10) - 1;
-            System.out.println(iPages);
-        }
-        for (int j = 1; j < iPages; j++) {
+         iPages = iPages / 10;
+         for (int j = 1; j <= iPages; j++) {
             driver.findElement(By.cssSelector("body > div.parametrs.margBtm10 > div > div.paginator.greyBox.extendedVariant.margBtm20 > div.paginator.greyBox > ul > li:nth-child(" + j + ") > a > span")).click();
             List<WebElement> tables = driver.findElements(By.xpath("//*[@id=\"exceedSphinxPageSizeDiv\"]/div"));
 
