@@ -102,11 +102,16 @@ public class task2 {
             System.out.println("Файл не найден");
         }
 
-        String pagesN = driver.findElement(By.cssSelector("body > div.parametrs.margBtm10 > div > div.paginator.greyBox.extendedVariant.margBtm20 > div.paginator.greyBox > p > strong")).getText();
+        String pagesN = driver.findElement(By.cssSelector("body > div.parametrs.margBtm10 > div > div.paginator" +
+                ".greyBox.extendedVariant.margBtm20 > div.paginator.greyBox > p > strong")).getText();
          int iPages = Integer.parseInt(pagesN);
-         iPages = iPages / 10;
-         for (int j = 1; j <= iPages; j++) {
-            driver.findElement(By.cssSelector("body > div.parametrs.margBtm10 > div > div.paginator.greyBox.extendedVariant.margBtm20 > div.paginator.greyBox > ul > li:nth-child(" + j + ") > a > span")).click();
+         if((iPages%10) == 0)
+            iPages = (iPages / 10);
+         else
+             iPages = (iPages/10)+1;
+         System.out.println(iPages);
+         for (int j = 1; j != (iPages+1); j++) {
+            driver.findElement(By.xpath("//span[text()='" + j + "']")).click();
             List<WebElement> tables = driver.findElements(By.xpath("//*[@id=\"exceedSphinxPageSizeDiv\"]/div"));
 
             for (int i = 0; i < tables.size(); i++) {
@@ -118,11 +123,14 @@ public class task2 {
 
                 try {
                     writer.append("\r\n");
-                    writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(4) > td:nth-child(2)")).getText());
+                    writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > " +
+                            "tbody  > tr:nth-child(4) > td:nth-child(2)")).getText());
                     writer.append("\r\n");
-                    writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(2) > td:nth-child(2)")).getText());
+                    writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > " +
+                            "tbody  > tr:nth-child(2) > td:nth-child(2)")).getText());
                     writer.append("\r\n");
-                    writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > tbody > tr:nth-child(10) > td:nth-child(2)")).getText());
+                    writer.append(driver.findElement(By.cssSelector("#tab-info > div:nth-child(2) > div > table > " +
+                            "tbody  > tr:nth-child(10) > td:nth-child(2)")).getText());
                     writer.append("\r\n");
                 } catch (Exception ex) {
                     ex.fillInStackTrace();
@@ -143,7 +151,8 @@ public class task2 {
 
     @Then("^i entering data in fields and click button \"([^\"]*)\"$")
     public void i_entering_data_in_fields_and_click_button(String css) {
-        wait.until(ExpectedConditions.invisibilityOfAllElements(driver.findElements(By.xpath("//*[@id=\"organizationLevelTag\"]/div/div[2]/div[1]/ul/li"))));
+        wait.until(ExpectedConditions.invisibilityOfAllElements(driver.findElements(By.xpath("//*[@id" +
+                "=\"organizationLevelTag\"]/div/div[2]/div[1]/ul/li"))));
         driver.findElement(By.cssSelector(css)).click();
     }
 }
